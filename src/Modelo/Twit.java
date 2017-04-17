@@ -15,7 +15,7 @@ import java.util.logging.Level;
 import java.util.logging.Logger;
 import oauth.signpost.OAuthConsumer;
 import oauth.signpost.commonshttp.CommonsHttpOAuthConsumer;
-import org.apache.commons.io.IOUtils;
+//import org.apache.commons.io.IOUtils;
 import org.apache.http.Header;
 import org.apache.http.HttpResponse;
 import org.apache.http.client.HttpClient;
@@ -69,7 +69,7 @@ public class Twit
             int statusCode = httpResponse.getStatusLine().getStatusCode();
             System.out.println(httpResponse.getStatusLine().getReasonPhrase());
             System.out.println(statusCode + ':' + httpResponse.getStatusLine().getReasonPhrase());
-            System.out.println(IOUtils.toString(httpResponse.getEntity().getContent()));
+           // System.out.println(IOUtils.toString(httpResponse.getEntity().getContent()));
      } 
      catch (Exception ex) 
      {
